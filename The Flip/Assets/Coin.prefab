@@ -257,6 +257,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 4c3166ebc9b2bd449888d437570add31, type: 2}
   - {fileID: 2100000, guid: 5e5288fb27bf5dd4abb410aeb8900ec2, type: 2}
   - {fileID: 2100000, guid: 8a2a7642233820e44b0bc0d58cacf38f, type: 2}
+  - {fileID: 2100000, guid: 879da205ef06fce4c896e31b64b26f00, type: 2}
+  - {fileID: 2100000, guid: 981fda067d05c894888767b9371dcb69, type: 2}
   helptextes:
   - {fileID: 21300000, guid: 11322a167a8a9be468c855631abab8f6, type: 3}
   - {fileID: 21300000, guid: f6fccc13855d7534fa5e6e070a44fb59, type: 3}
@@ -273,6 +275,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 34b9eb811e8438543939f402bd9a92f6, type: 3}
   - {fileID: 21300000, guid: da05fa78f76685340b05174159fe98e4, type: 3}
   - {fileID: 21300000, guid: 84c304118ce285d48b703a2715b2674e, type: 3}
+  - {fileID: 21300000, guid: 96073fedb27b6f64599e58aef248a371, type: 3}
 --- !u!136 &3895809729359055456
 CapsuleCollider:
   m_ObjectHideFlags: 0

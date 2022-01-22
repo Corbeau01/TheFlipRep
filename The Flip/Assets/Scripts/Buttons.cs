@@ -36,7 +36,7 @@ public class Buttons : MonoBehaviour
     }
     public void TheifRanChoice()
     {
-        int i = Random.Range(16, 18);
+        int i = Random.Range(17, 19);
         CoinBehavior.id id = (CoinBehavior.id)i;
         PlayerStats.NewPiece(id);
     }
@@ -47,7 +47,7 @@ public class Buttons : MonoBehaviour
     }
     public void BlockRanChoice()
     {
-        int i = Random.Range(12, 16);
+        int i = Random.Range(13, 17);
         CoinBehavior.id id = (CoinBehavior.id)i;
         PlayerStats.NewPiece(id);
     }
@@ -58,7 +58,7 @@ public class Buttons : MonoBehaviour
     }
     public void MedicRanChoice()
     {
-        int i = Random.Range(7, 12);
+        int i = Random.Range(7, 13);
         CoinBehavior.id id = (CoinBehavior.id)i;
         PlayerStats.NewPiece(id);
     }

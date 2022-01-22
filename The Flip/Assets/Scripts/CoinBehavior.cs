@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CoinBehavior : MonoBehaviour
 {
-    //              0 1 2    3        4         5      6      7     8       9      10     11     12     13     14     15      16      17
-    public enum id {a,b,c,BerserkA,BerserkB,RangerA,RangerB,MedicA,MedicB,MedicC,MedicD,MedicE,BlockA,BlockB,BlockC, BlockD, ThiefA,ThiefB};
+    //              0 1 2    3        4         5      6      7     8       9      10     11     12     13     14     15      16      17     18
+    public enum id {a,b,c,BerserkA,BerserkB,RangerA,RangerB,MedicA,MedicB,MedicC,MedicD,MedicE, MedicF, BlockA,BlockB,BlockC, BlockD, ThiefA,ThiefB};
     public id ID;
     bool flipping = false;
     Rigidbody rb;
@@ -130,9 +130,16 @@ public class CoinBehavior : MonoBehaviour
         if (ID == id.MedicE)
         {
             Facemat.material = Mats[24];
-            Pilemat.material = Mats[15];
+            Pilemat.material = Mats[25];
             HelpText.sprite = helptextes[14];
             MyHelpText = helptextes[14];
+        }
+        if (ID == id.MedicF)
+        {
+            Facemat.material = Mats[26];
+            Pilemat.material = Mats[27];
+            HelpText.sprite = helptextes[15];
+            MyHelpText = helptextes[15];
         }
     }
     
@@ -228,8 +235,9 @@ public class CoinBehavior : MonoBehaviour
     }
     void DoDamage(int dmg)
     {
-        PlayerStats.selectedEnemy.health -= dmg;
-        PlayerStats.selectedEnemy.health -= PlayerStats.selectedEnemy.BonusDamageTaken;
+        int dmgg = (dmg + PlayerStats.selectedEnemy.BonusDamageTaken)*PlayerStats.dmgmulti;
+        PlayerStats.selectedEnemy.health -= dmgg;
+        PlayerStats.dmgmulti = 1;
     }
     void DoCoinAction()
     {
@@ -293,6 +301,10 @@ public class CoinBehavior : MonoBehaviour
         if (ID == id.ThiefB)
         {
             ThiefB();
+        }
+        if (ID == id.MedicF)
+        {
+            ScaleA();
         }
     }
    void BerserkA()
@@ -473,6 +485,17 @@ public class CoinBehavior : MonoBehaviour
         else
         {
             PlayerStats.gold += 1;
+        }
+    }
+    void ScaleA()
+    {
+        if (CheckIfUp())
+        {
+            PlayerStats.dmgmulti *= 5;
+        }
+        else
+        {
+            PlayerStats.shieldMulti *= 2;
         }
     }
     void BlockE()

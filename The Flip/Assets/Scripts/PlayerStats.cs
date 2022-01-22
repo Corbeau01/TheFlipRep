@@ -15,7 +15,8 @@ public static class PlayerStats
     public static int numberOfPieces = 0;
     public static List<GameObject> Pieces = new List<GameObject>();
     public static List<PiecesLib> PiecesList = new List<PiecesLib>();
-
+    public static int dmgmulti=1;
+    public static int shieldMulti = 1;
     public static void TakeDamage(int dmg)
     {
         if(Shield>0)
@@ -39,14 +40,16 @@ public static class PlayerStats
     }
     public static void GainShield(int shieldGain)
     {
-        if(Shield+shieldGain>MaxShield)
+        int shieldGainn = shieldGain * shieldMulti;
+        if(Shield+shieldGainn>=MaxShield)
         {
             Shield = MaxShield;
         }
         else
         {
-            Shield += shieldGain;
+            Shield += shieldGainn;
         }
+        shieldMulti = 1;
     }
     public static void NewPiece(CoinBehavior.id id)
     {
