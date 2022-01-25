@@ -17,6 +17,12 @@ public static class PlayerStats
     public static List<PiecesLib> PiecesList = new List<PiecesLib>();
     public static int dmgmulti=1;
     public static int shieldMulti = 1;
+    public static int healMulti = 1;
+    public static int CurrentRoom = 1;
+    public static int LeftRoom = 2;
+    public static int rightRoom = 3;
+    public static int skillsPoints = 0;
+    public static bool IsAtCHauldron = false;
     public static void TakeDamage(int dmg)
     {
         if(Shield>0)
@@ -56,5 +62,18 @@ public static class PlayerStats
         PiecesLib p = new PiecesLib();
         p.ID = id;
         PiecesList.Add(p);
+    }
+    public static void heal(int h)
+    {
+        int hh = h * healMulti;
+        if(hh+health>=Maxhealth)
+        {
+            health = Maxhealth;
+        }
+        else
+        {
+            health += hh;
+        }
+        healMulti = 1;
     }
 }

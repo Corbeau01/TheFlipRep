@@ -16,6 +16,7 @@ public class enemy : MonoBehaviour
     bool isdead = false;
     public bool IsRange = false;
     float DeadTimer = 0;
+    bool hasHoseReward = false;
 
     public GameObject ChooseRewards;
     private void Update()
@@ -31,7 +32,12 @@ public class enemy : MonoBehaviour
         }
         if(DeadTimer>5f)
         {
-            ChooseRewards.SetActive(true);
+            if(hasHoseReward==false)
+            {
+                ChooseRewards.SetActive(true);
+                hasHoseReward = true;
+            }
+            
             
         }
         if(PlayerStats.IsEnemyTurn)

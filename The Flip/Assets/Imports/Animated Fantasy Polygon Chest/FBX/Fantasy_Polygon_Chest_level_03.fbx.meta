@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: bc7d61194f5453649bc87fa87a09fc2f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base
+    100002: base_def
+    100004: base_def_in
+    100006: base_def_out
+    100008: Base_squash_bottom
+    100010: Base_squash_top
+    100012: Base_squash_top_end
+    100014: //RootNode
+    100016: Lid
+    100018: lid_def
+    100020: lid_def_in
+    100022: lid_def_out
+    100024: lid_def_out_end
+    100026: lid_loc
+    100028: lid_MCH
+    100030: lid_MCH_end
+    100032: Lid_sqaush_top
+    100034: Lid_sqaush_top_end
+    100036: Lid_squash_bottom
+    100038: Root
+    100040: Treasure_chest_base_GEO
+    100042: Treasure_chest_lid_GEO
+    100044: Treasure_chest_rig
+    400000: Base
+    400002: base_def
+    400004: base_def_in
+    400006: base_def_out
+    400008: Base_squash_bottom
+    400010: Base_squash_top
+    400012: Base_squash_top_end
+    400014: //RootNode
+    400016: Lid
+    400018: lid_def
+    400020: lid_def_in
+    400022: lid_def_out
+    400024: lid_def_out_end
+    400026: lid_loc
+    400028: lid_MCH
+    400030: lid_MCH_end
+    400032: Lid_sqaush_top
+    400034: Lid_sqaush_top_end
+    400036: Lid_squash_bottom
+    400038: Root
+    400040: Treasure_chest_base_GEO
+    400042: Treasure_chest_lid_GEO
+    400044: Treasure_chest_rig
+    2100000: Polygon_Chest
+    2100002: Fantasy_Polygon_Chest_Texture
+    2300000: Treasure_chest_base_GEO
+    2300002: Treasure_chest_lid_GEO
+    3300000: Treasure_chest_base_GEO
+    3300002: Treasure_chest_lid_GEO
+    4300000: Treasure_chest_base_GEO
+    4300002: Treasure_chest_lid_GEO
+    7400000: Treasure_chest_rig|Torus.020Action
+    7400002: Treasure_chest_rig|TorusAction
+    7400004: Treasure_chest_rig|TorusAction.001
+    7400006: Treasure_chest_rig|TorusAction.002
+    7400008: Treasure_chest_rig|TorusAction.003
+    7400010: Treasure_chest_rig|TorusAction.004
+    7400012: Treasure_chest_rig|TorusAction.005
+    7400014: Treasure_chest_rig|TorusAction.006
+    7400016: Treasure_chest_rig|TorusAction.007
+    7400018: Treasure_chest_rig|TorusAction.008
+    7400020: Treasure_chest_rig|TorusAction.009
+    7400022: Treasure_chest_rig|TorusAction.010
+    7400024: Treasure_chest_rig|TorusAction.011
+    7400026: Treasure_chest_rig|TorusAction.012
+    7400028: Treasure_chest_rig|TorusAction.013
+    7400030: Treasure_chest_rig|TorusAction.014
+    7400032: Treasure_chest_rig|TorusAction.015
+    7400034: Treasure_chest_rig|TorusAction.016
+    7400036: Treasure_chest_rig|TorusAction.017
+    7400038: Treasure_chest_rig|TorusAction.018
+    7400040: Treasure_chest_rig|TorusAction.019
+    7400042: Treasure_chest_rig|Treasure_chest_rigAction
+    9500000: //RootNode
+    13700000: Treasure_chest_base_GEO
+    13700002: Treasure_chest_lid_GEO
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fantasy_Polygon_Chest_Texture
+    second: {fileID: 2100000, guid: 4a3811725bea8104d901fd1048ad653b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polygon_Chest
+    second: {fileID: 2100000, guid: 0fd335286f0307046a60291cce5c21b3, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 1a4c48e752a6de748a295a0cea37b048
   - enabled: 1
-    path: Assets/Scenes/Combat2.unity
+    path: Assets/Scenes/CombatStart.unity
     guid: 4d61a09f1cf825d4daefdf4a44d1b9d8
+  - enabled: 1
+    path: Assets/Scenes/Chest.unity
+    guid: 9329f55d14c0a0541a0a34215c114eed
+  - enabled: 1
+    path: Assets/Scenes/CombatR3.unity
+    guid: 9a856cdefe29279468275f61ea19a89f
+  - enabled: 1
+    path: Assets/Scenes/ChaudronR4.unity
+    guid: 8fdad7b2c02c4594e9bfefd66d81eb00
   m_configObjects: {}

@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CoinBehavior : MonoBehaviour
 {
-    //              0 1 2    3        4         5      6      7     8       9      10     11     12     13     14     15      16      17     18
-    public enum id {a,b,c,BerserkA,BerserkB,RangerA,RangerB,MedicA,MedicB,MedicC,MedicD,MedicE, MedicF, BlockA,BlockB,BlockC, BlockD, ThiefA,ThiefB};
+    //              0 1 2    3        4         5      6          7     8       9      10     11     12     13     14      15      16      17       18     19     20       21      22     23
+    public enum id {a,b,c,BerserkA,BerserkB,BerserkC,BerserkD,BerserkE,RangerA,RangerB,RangerC,MedicA,MedicB,MedicC,MedicD,MedicE, MedicF,MedicFF, BlockA,BlockB,BlockC, BlockD, ThiefA,ThiefB};
     public id ID;
     bool flipping = false;
     Rigidbody rb;
@@ -34,6 +34,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[1];
             HelpText.sprite = helptextes[0];
             MyHelpText = helptextes[0];
+            return;
         }
         if(ID==id.BerserkB)
         {
@@ -41,6 +42,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[3];
             HelpText.sprite = helptextes[1];
             MyHelpText = helptextes[1];
+            return;
         }
         if(ID==id.RangerA)
         {
@@ -48,6 +50,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[5];
             HelpText.sprite = helptextes[2];
             MyHelpText = helptextes[2];
+            return;
         }
         if (ID == id.RangerB)
         {
@@ -55,6 +58,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[7];
             HelpText.sprite = helptextes[3];
             MyHelpText = helptextes[3];
+            return;
         }
         if (ID == id.MedicA)
         {
@@ -62,6 +66,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[9];
             HelpText.sprite = helptextes[4];
             MyHelpText = helptextes[4];
+            return;
         }
         if (ID == id.MedicB)
         {
@@ -69,6 +74,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[11];
             HelpText.sprite = helptextes[5];
             MyHelpText = helptextes[5];
+            return;
         }
         if (ID == id.MedicC)
         {
@@ -76,6 +82,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[13];
             HelpText.sprite = helptextes[6];
             MyHelpText = helptextes[6];
+            return;
         }
         if (ID == id.MedicD)
         {
@@ -83,6 +90,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[15];
             HelpText.sprite = helptextes[7];
             MyHelpText = helptextes[7];
+            return;
         }
 
         if (ID == id.BlockA)
@@ -91,6 +99,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[17];
             HelpText.sprite = helptextes[8];
             MyHelpText = helptextes[8];
+            return;
         }
         if (ID == id.BlockB)
         {
@@ -98,6 +107,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[17];
             HelpText.sprite = helptextes[9];
             MyHelpText = helptextes[9];
+            return;
         }
         if (ID == id.BlockC)
         {
@@ -105,6 +115,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[19];
             HelpText.sprite = helptextes[10];
             MyHelpText = helptextes[10];
+            return;
         }
         if (ID == id.ThiefA)
         {
@@ -112,6 +123,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[21];
             HelpText.sprite = helptextes[11];
             MyHelpText = helptextes[11];
+            return;
         }
         if (ID == id.ThiefB)
         {
@@ -119,6 +131,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[20];
             HelpText.sprite = helptextes[12];
             MyHelpText = helptextes[12];
+            return;
         }
         if (ID == id.BlockD)
         {
@@ -126,6 +139,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[16];
             HelpText.sprite = helptextes[13];
             MyHelpText = helptextes[13];
+            return;
         }
         if (ID == id.MedicE)
         {
@@ -133,6 +147,7 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[25];
             HelpText.sprite = helptextes[14];
             MyHelpText = helptextes[14];
+            return;
         }
         if (ID == id.MedicF)
         {
@@ -140,9 +155,51 @@ public class CoinBehavior : MonoBehaviour
             Pilemat.material = Mats[27];
             HelpText.sprite = helptextes[15];
             MyHelpText = helptextes[15];
+            return;
         }
+        CoinsClass CC=null;
+        if (ID==id.BerserkC)
+        {
+           CC = FindObjectOfType<BerserkC>();
+            
+        }
+        if (ID == id.BerserkD)
+        {
+            CC = FindObjectOfType<BerserkD>();
+
+        }
+        if (ID == id.BerserkD)
+        {
+            CC = FindObjectOfType<BerserkE>();
+
+        }
+        if (ID == id.RangerC)
+        {
+            CC = FindObjectOfType<RangerC>();
+
+        }
+        if (ID == id.MedicFF)
+        {
+            CC = FindObjectOfType<MedicFF>();
+
+        }
+        if (ID == id.BlockD)
+        {
+            CC = FindObjectOfType<BlockD>();
+
+        }
+        if(CC!=null)
+        {
+            Facemat.material = CC.FaceMat;
+            Pilemat.material = CC.PileMat;
+            HelpText.sprite = CC.HelpText;
+            MyHelpText = CC.HelpText;
+            CA = CC.CoinAction;
+        }
+        
     }
-    
+    delegate void CoinAction();
+    CoinAction CA;
     private void OnMouseUp()
     {
         if(PlayerStats.IsPlayerTurn)
@@ -150,7 +207,10 @@ public class CoinBehavior : MonoBehaviour
             Flip();
             //print("flip");
         }
-
+        if(PlayerStats.IsAtCHauldron)
+        {
+            BurnPiece(ID);
+        }
     }
     private void OnMouseOver()
     {
@@ -245,67 +305,109 @@ public class CoinBehavior : MonoBehaviour
         if (ID == id.BerserkA)
         {
             BerserkA();
+            return;
         }
         if(ID==id.BerserkB)
         {
             BerserkB();
+            return;
         }
-        if(ID==id.RangerA)
+        if (ID == id.BerserkC)
+        {
+            BerserkerC();
+            return;
+        }
+        if (ID == id.BerserkD)
+        {
+            BerserkerD();
+            return;
+        }
+        if (ID == id.BerserkE)
+        {
+            BerserkerE();
+            return;
+        }
+        if (ID==id.RangerA)
         {
             RangerA();
+            return;
         }
         if(ID==id.RangerB)
         {
             RangerB();
+            return;
+        }
+        if (ID == id.RangerC)
+        {
+            RangerC();
+            return;
         }
         if (ID == id.MedicA)
         {
             BuffA();
+            return;
         }
         if (ID == id.MedicB)
         {
             BuffB();
+            return;
         }
         if (ID == id.MedicC)
         {
             BuffC();
+            return;
         }
         if (ID == id.MedicD)
         {
             BuffD();
+            return;
         }
         if (ID == id.MedicE)
         {
             BuffE();
+            return;
         }
         if (ID == id.BlockA)
         {
             BlockA();
+            return;
         }
         if (ID == id.BlockB)
         {
             BlockB();
+            return;
         }
         if (ID == id.BlockC)
         {
             BlockC();
+            return;
         }
         if (ID == id.BlockD)
         {
             BlockD();
+            return;
         }
         if (ID == id.ThiefA)
         {
             ThiefA();
+            return;
         }
         if (ID == id.ThiefB)
         {
             ThiefB();
+            return;
         }
         if (ID == id.MedicF)
         {
             ScaleA();
+            return;
         }
+        if (ID == id.MedicFF)
+        {
+            BuffF();
+            return;
+        }
+        CA();
     }
    void BerserkA()
     {
@@ -364,7 +466,7 @@ public class CoinBehavior : MonoBehaviour
     {
         if (CheckIfUp())
         {
-            PlayerStats.health += 10;
+            PlayerStats.heal(10);
         }
         else
         {
@@ -375,7 +477,7 @@ public class CoinBehavior : MonoBehaviour
     {
         if (CheckIfUp())
         {
-            PlayerStats.health += 10;
+            PlayerStats.heal(10);
         }
         else
         {
@@ -480,7 +582,7 @@ public class CoinBehavior : MonoBehaviour
     {
         if (CheckIfUp())
         {
-            PlayerStats.selectedEnemy.TakeDamage(5);
+            DoDamage(5);
         }
         else
         {
@@ -492,10 +594,74 @@ public class CoinBehavior : MonoBehaviour
         if (CheckIfUp())
         {
             PlayerStats.dmgmulti *= 5;
+            PlayerStats.health -= 5;
         }
         else
         {
             PlayerStats.shieldMulti *= 2;
+        }
+    }
+    void BerserkerC()
+    {
+        if (CheckIfUp())
+        {
+            PlayerStats.dmgmulti *= 2;
+        }
+        else
+        {
+            DoDamage(10);
+            PlayerStats.health -= 5;
+        }
+    }
+    void BerserkerD()
+    {
+        if (CheckIfUp())
+        {
+            PlayerStats.dmgmulti *= 2;
+        }
+        else
+        {
+
+            PlayerStats.health -= 10;
+        }
+    }
+    void BuffF()
+    {
+        int i = Random.Range(1, 20);
+        if (CheckIfUp())
+        {
+            PlayerStats.heal(i);
+        }
+        else
+        {
+            PlayerStats.healMulti *= 2;
+        }
+        
+    }
+    void RangerC()
+    {
+        if (CheckIfUp())
+        {
+            int i = Random.Range(1, 30);
+            DoDamage(i);
+        }
+        else
+        {
+            
+        }
+    }
+    void BerserkerE()
+    {
+        int i = Random.Range(1, 20);
+        if (CheckIfUp())
+        {
+            DoDamage(i);
+            PlayerStats.heal(i);
+        }
+        else
+        {
+
+            DoDamage(i);
         }
     }
     void BlockE()
@@ -508,5 +674,19 @@ public class CoinBehavior : MonoBehaviour
         {
 
         }
+    }
+    public void BurnPiece(CoinBehavior.id ID)
+    {
+        for (int i = 0; i < PlayerStats.PiecesList.Count; i++)
+        {
+            if(PlayerStats.PiecesList[i].ID==ID)
+            {
+                PlayerStats.PiecesList.RemoveAt(i);
+                break;
+            }
+        }
+        GameObject fx = FindObjectOfType<CoinBurnManagerer>().BurnFX;
+        Instantiate(fx, this.transform.position+new Vector3(0,-1.5f,0), Quaternion.identity);
+        PlayerStats.IsAtCHauldron = false;
     }
 }

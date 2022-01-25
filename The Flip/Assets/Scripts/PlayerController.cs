@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     List<GameObject> PiecesOut = new List<GameObject>();
     public Image HelpText;
     public GameObject PiecePrefab;
+    public Text SkillsLeft;
+    public Text MaxHealthSkill;
+    public Text MaxShieldSkill;
     private void Start()
     {
         
@@ -49,10 +52,17 @@ public class PlayerController : MonoBehaviour
         ShieldSlider.value = PlayerStats.Shield;
         ShieldSlider.maxValue = PlayerStats.MaxShield;
         ShieldText.text = PlayerStats.Shield.ToString() + "=" + PlayerStats.MaxShield.ToString();
+        MaxHealthSkill.text = PlayerStats.Maxhealth.ToString();
+        MaxShieldSkill.text = PlayerStats.MaxShield.ToString();
+        SkillsLeft.text = PlayerStats.skillsPoints.ToString();
     }
 
     public void DrawPiece()
     {
+        if(PlayerStats.selectedEnemy==null)
+        {
+            return;
+        }
         if(PiecesOut.Count<1)
         {
             return;
