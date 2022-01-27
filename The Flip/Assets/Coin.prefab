@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 3895809729565848378}
   - component: {fileID: 3895809729565848380}
   - component: {fileID: 3895809729565848379}
+  - component: {fileID: 1677904119}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -317,14 +318,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3895809729565848382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.99959975, w: 0.028292438}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: -0.05, z: 1}
   m_Children:
   - {fileID: 3895809729732506654}
   m_Father: {fileID: 3895809729359055457}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -176.757}
 --- !u!33 &3895809729565848377
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -382,13 +383,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3895809729565848382}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 10
   m_CollisionDetection: 0
 --- !u!64 &3895809729565848379
 MeshCollider:
@@ -404,6 +405,26 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1677904119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3895809729565848382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe3c774fca822af4d8cbaf112cb7689b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num_rotation_x: 2
+  num_rotation_z: 2
+  rotation_randomness: 2
+  rotation_random: 1
+  flip_target_height: 10
+  force_randomness: 2
+  force_random: 1
+  ISFace: 0
 --- !u!1 &3895809729732506655
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +516,7 @@ MeshCollider:
   m_GameObject: {fileID: 3895809729732506655}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -517,7 +538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3895809729784534617
 Transform:
   m_ObjectHideFlags: 0

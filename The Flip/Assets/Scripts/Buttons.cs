@@ -7,25 +7,25 @@ public class Buttons : MonoBehaviour
     public GameObject ChooseReward;
    public void BerserkChoice()
     {
-        int i = Random.Range(3, 5);
+        int i = Random.Range(3, 8);
         CoinBehavior.id id = CoinBehavior.id.BerserkA;
         PlayerStats.NewPiece(id);
     }
     public void BerserkRanChoice()
     {
-        int i = Random.Range(3, 5);
+        int i = Random.Range(3, 8);
         CoinBehavior.id id = (CoinBehavior.id)i;
         PlayerStats.NewPiece(id);
     }
     public void RangerChoice()
     {
-        int i = Random.Range(5, 7);
+        int i = Random.Range(8, 11);
         CoinBehavior.id id = CoinBehavior.id.RangerA;
         PlayerStats.NewPiece(id);
     }
     public void RangerRanChoice()
     {
-        int i = Random.Range(5, 7);
+        int i = Random.Range(8, 11);
         CoinBehavior.id id = (CoinBehavior.id)i;
         PlayerStats.NewPiece(id);
     }
@@ -36,7 +36,7 @@ public class Buttons : MonoBehaviour
     }
     public void TheifRanChoice()
     {
-        int i = Random.Range(17, 19);
+        int i = Random.Range(22, 24);
         CoinBehavior.id id = (CoinBehavior.id)i;
         PlayerStats.NewPiece(id);
     }
@@ -47,7 +47,7 @@ public class Buttons : MonoBehaviour
     }
     public void BlockRanChoice()
     {
-        int i = Random.Range(13, 17);
+        int i = Random.Range(18, 22);
         CoinBehavior.id id = (CoinBehavior.id)i;
         PlayerStats.NewPiece(id);
     }
@@ -58,7 +58,7 @@ public class Buttons : MonoBehaviour
     }
     public void MedicRanChoice()
     {
-        int i = Random.Range(7, 13);
+        int i = Random.Range(11, 18);
         CoinBehavior.id id = (CoinBehavior.id)i;
         PlayerStats.NewPiece(id);
     }
@@ -144,6 +144,17 @@ public class Buttons : MonoBehaviour
         {
             PlayerStats.LeftRoom = 9;
             PlayerStats.rightRoom = 9;
+        }
+        if (PlayerStats.CurrentRoom == 9)
+        {
+            PlayerStats.LeftRoom = 10;
+            PlayerStats.rightRoom = 10;
+        }
+        if (PlayerStats.CurrentRoom == 10)
+        {
+            PlayerStats.LeftRoom = 1;
+            PlayerStats.rightRoom = 1;
+            PlayerStats.ASC += 1;
         }
     }
 }

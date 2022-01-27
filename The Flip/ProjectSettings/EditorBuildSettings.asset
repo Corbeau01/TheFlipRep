@@ -20,4 +20,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChaudronR4.unity
     guid: 8fdad7b2c02c4594e9bfefd66d81eb00
+  - enabled: 1
+    path: Assets/Scenes/CombatR5.unity
+    guid: ceb8a2efd5781aa47a782bb7d6ec47a3
+  - enabled: 1
+    path: Assets/Scenes/ChestR6.unity
+    guid: ffd2ae4a0899165459f1009a68aeff03
+  - enabled: 1
+    path: Assets/Scenes/ChaudronR7.unity
+    guid: 5a70f09fc75da4c41ada642cb6eb6dd0
+  - enabled: 1
+    path: Assets/Scenes/CombatR8.unity
+    guid: b84574d7995892644a752d3533c703f7
   m_configObjects: {}

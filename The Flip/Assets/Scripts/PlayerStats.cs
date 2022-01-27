@@ -23,6 +23,7 @@ public static class PlayerStats
     public static int rightRoom = 3;
     public static int skillsPoints = 0;
     public static bool IsAtCHauldron = false;
+    public static int ASC = 1;
     public static void TakeDamage(int dmg)
     {
         if(Shield>0)

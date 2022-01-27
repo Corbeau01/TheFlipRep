@@ -205,6 +205,7 @@ public class CoinBehavior : MonoBehaviour
         if(PlayerStats.IsPlayerTurn)
         {
             Flip();
+            this.transform.GetChild(0).gameObject.GetComponent<location_coin>().flip();
             //print("flip");
         }
         if(PlayerStats.IsAtCHauldron)
@@ -232,14 +233,14 @@ public class CoinBehavior : MonoBehaviour
        if(flipping)
         {
             flipTimer += Time.deltaTime;
-            this.transform.GetChild(0).Rotate(new Vector3(FlipRotation,FlipRotation,FlipRotation)*Time.deltaTime);
+            //this.transform.GetChild(0).Rotate(new Vector3(FlipRotation,FlipRotation,FlipRotation)*Time.deltaTime);
             
 
         }
         if(flipTimer>2)
         {
             flipping = false;
-            this.transform.GetChild(0).transform.localPosition = (new Vector3(0.00f, 0.00f, 0.00f));
+          //  this.transform.GetChild(0).transform.localPosition = (new Vector3(0.00f, 0.00f, 0.00f));
             
             IsAttacking = true;
             flipTimer = 0;
@@ -275,7 +276,7 @@ public class CoinBehavior : MonoBehaviour
         //print("flippin");
         FlipRotation = Random.Range(-360f,360f);
         flipping = true;
-        rb.AddForce(transform.up*FlipForce);
+        //rb.AddForce(transform.up*FlipForce);
         
     }
     void DrawPiece()
@@ -284,14 +285,7 @@ public class CoinBehavior : MonoBehaviour
     }
     bool CheckIfUp()
     {
-        if(this.transform.GetChild(1).GetComponent<CheckFace>().IsFaceUp==true)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return this.transform.GetChild(0).gameObject.GetComponent<location_coin>().ISFace;
     }
     void DoDamage(int dmg)
     {
